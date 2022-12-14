@@ -155,39 +155,51 @@ background-size: cover;}
 /* features */
 .section-features{padding-bottom: 0;}
 
-.features{ display: flex;
+.features{display: flex;
+gap:24px;}
+
+.features-wrapper{display: flex;
+    justify-content: center;
+    align-items: center;
+width: 264px;
+height:112px;
+border-radius: 4px;
+background-color: #F4F4FD;
+margin-bottom: 8px;
 }
-.features-item::before{display:block;
-    content: " ";
-    height: 112px;
-    background-color:  #F4F4FD;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 8px;}
-.icon-antenna::before{background-image: url(../images/icon.svg/antenna1.svg);}
-.icon-clock::before{background-image: url(../images/icon.svg/clock1.svg);}
-.icon-diagram::before{background-image: url(../images/icon.svg/diagram1.svg);}
-.icon-astronaut::before{background-image: url(../images/icon.svg/astronaut1.svg);}
 
-.features-title{margin-bottom: 8px;
 
+.features-title {
+    margin-bottom: 8px;
     font-weight: 600;
     font-size: 20px;
-    line-height:1.2;
+    line-height: 1.2;
     letter-spacing: 0.02em;}
-.features-text{width: 264px;
-    line-height:1.5;
-    letter-spacing: 0.02em;
-    color:var(--title-text-color);}
 
-.features-item:not(:last-child){margin-right: 24px;}
+
+ .features-text {
+    width: 264px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);}
+
 
 
  /* what we are doing */
-
 .work {display: flex;
 }
 .work-list:not(:last-child){margin-right: 24px;}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -262,15 +274,15 @@ fill: var(--secondary-text-color);}
     width: 168px;
     height: 88px;
     border: 1px solid #8E8F99;
-    border-radius: 4px;}
+    border-radius: 4px;
+    fill: #8E8F99;}
+
     
-.customers-link:hover,.customers-link:focus{border:1px solid;color:var(--accent-color);}
-.customers-icon:hover, .customers-icon:focus {fill: var(--accent-color);}
-
-.customers-icon {fill:#8E8F99;}
+    
+.customers-link:hover,.customers-link:focus{border:1px solid var(--accent-color);fill:var(--accent-color);}
 
 
- /* footer */
+/* footer */
 .footer{ padding: 100px 0;
 
         background-color: var(--primary-text-color);}
